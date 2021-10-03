@@ -1,0 +1,24 @@
+{
+  "name": "zenstyles",
+  "version": "0.0.1",
+  "homepage": "https://gitlab.com/mushroomlabs/zenstyles",
+  "author": "Raphael Lullis <raphael@mushroomlabs.com>",
+  "description": "Zen - The CSS non-framework",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/mushroomlabs/zenstyles.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "mobile-friendly",
+    "front-end",
+    "sass",
+    "modern"
+  ],
+  "devDependencies": {},
+  "browserslist": [],
+  "dependencies": {
+    "sass": "^1.42.1"
+  }
+}

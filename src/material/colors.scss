@@ -1,0 +1,37 @@
+@use 'sass:map';
+
+$color_palettes: (
+  "teal": (
+    "primary": #00897B,
+    "primary-variant": #26a69a,
+    "secondary": #fff,
+    "text-primary": #37474f,
+    "text-secondary": #B8B8B8,
+  )
+);
+
+$default_color_palette: "teal";
+
+@function getPalette($palette) {
+  $color: map.get($color_palettes, $palette);
+  $default_color: map.get($color_palettes, $default_color_palette);
+
+  @if $color == null {
+    @return $default_color;
+  }
+  @else {
+    @return $color;
+  }
+}
+
+@function getColor($palette, $color) {
+  $color_map: getPalette($palette);
+  @return map.get($color_map, $color);
+}
+
+@mixin color-palette($theme: '') {
+    color: getColor($theme, 'secondary');
+    background-color: getColor($theme, 'primary');
+}
+
+$textColor: getColor('', 'text-primary');
