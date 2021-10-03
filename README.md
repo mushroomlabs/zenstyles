@@ -8,9 +8,10 @@ components. All in all, a lot of progress has been made.
 
 But of course, not everything is perfect. When I started working on
 [Hub20](https://hub20.io), I knew that I wanted to have the [checkout
-widget](https://gitlab.com/mushroomlabs/hub20/checkout) able to match
-the original site look and feel. I wanted to provide one single set of
-components with "naked" html, and let the style be defined separately.
+widget](https://gitlab.com/mushroomlabs/hub20/checkout20) able to
+match the original site look and feel. I wanted to provide one single
+set of components with "naked" html, and let the style be defined
+separately.
 
 After trying many of the current "CSS frameworks", I realized that all
 of them required changes in the HTML that I was provided. Why is that?
